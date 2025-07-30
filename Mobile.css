@@ -1,0 +1,13 @@
+@media (max-width: 600px) {
+  main aside {
+    width: 150px;
+    padding: 20px 0;
+  }
+  main aside h1 {
+    font-size: 1.5rem;
+  }
+  main .main-sections {
+    width: calc(100% - 150px);
+    margin-left: 150px;
+  }
+}
