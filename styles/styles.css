@@ -173,16 +173,6 @@ aside .nav-links a:hover {
   transform: translateX(-50%);
   z-index: 3;
 }
-@keyframes slide-up-down {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
-}
-
-@keyframes fade-in-out {
-  0%, 100% { opacity: 0.2; }
-  50% { opacity: 1; }
-}
-
 .mouse {
   height: 50px;
   margin-bottom: 10px;
@@ -192,8 +182,18 @@ aside .nav-links a:hover {
   border-radius: 15px;
 }
 @keyframes scroll-wheel {
-  0%, 100% { opacity: 0.05; }
-  50% { opacity: 1; }
+  0% {
+    top: 0px;
+    opacity: 0px;
+  }
+  50% {
+    top: 16px;
+    opacity: 1;
+  }
+  100% {
+    top: 16px;
+    opacity: 0;
+  }
 }
 .scroll-wheel {
   background-color: white;
@@ -201,9 +201,9 @@ aside .nav-links a:hover {
   width: 4px;
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  animation: slide-up-down 1.5s ease-in-out infinite normal none running;
+  top: 50px;
+  transform: translateX(-50%);
+  animation: scroll-wheel 1.5s infinite;
   border-radius: 2px;
 }
 .about-section {
@@ -324,7 +324,7 @@ aside .nav-links a:hover {
   justify-content: center;
   padding: 50px 50px 80px;
   align-items: center;
-  background-color: #f2f2f2;
+  background-color: #e8e8e8;
   gap: 20px;
   height: 549.36px;
   width: 100%;
@@ -372,4 +372,148 @@ aside .nav-links a:hover {
   font-size: 1.2em;
   line-height: 2;
   margin-bottom: 20px;
+}
+
+.splide {
+  padding: 50px;
+}
+.splide__pagination__page {
+  background: #ccc;
+    border: 0;
+    border-radius: 5px !important;
+    display: inline-block;
+    height: 5px !important;
+    margin: 3px 5px !important;
+    opacity: .7;
+    padding: 0;
+    position: relative;
+    transition: transform .2s linear;
+    width: 25px !important;
+}
+.splide__pagination__page.is-active {
+  background: #4d4d4d !important;
+  height: 4px !important;
+}
+/* * {
+  outline: red solid 1px;
+} */
+ .services-offered {
+  padding: 50px;
+  width: 100%;
+ }
+ .grid-service {
+   display: grid;
+   gap: 20px;
+   grid-template-columns: repeat(2, 1fr);
+ }
+ .service-item {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+ }
+ .service-item img {
+  height: 50px;
+  object-fit: cover;
+  width: 50px;
+ }
+ .service-item h5 {
+     color: black;
+     font-family: 700;
+     font-size: 1.3em;
+     letter-spacing: 0.2em;
+     text-transform: uppercase;
+     margin: 10px 0px;
+ }
+ .service-item p {
+      color: #4d4d4d;
+      font-family: 'Lora', sans-serif;
+      font-size: 1.3em;
+      line-height: 2;
+      text-align: left;
+ }
+ .service-highlight {
+  align-items: center;
+  background-color: #e8e8e8;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 100px 50px;
+  width: 100%;
+ }
+ .projects-section {
+  width: 100%;
+  height: fit-content;
+  align-items: flex-start;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+ }
+ .projects-caption {
+  padding: 100px 50px 50px;
+ }
+ .projects-caption h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+ }
+ .projects-caption p {
+  color: #4d4d4d;
+  font-family: 'Lora', sans-serif;
+  font-size: 1.2em;
+  line-height: 2;
+ }
+ .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ }
+ .project-item {
+  aspect-ratio: 1.4 / 1;
+  overflow: hidden;
+  position: relative;
+  
+ }
+ .project-item img {
+   height: 100%;
+   object-fit: cover;
+   width: 100%;
+ }
+  .projects-info {
+    align-items: center;
+    background: #000c;
+    bottom: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    transition: opacity 0.3s ease-in-out;
+    width: 100%;
+  }
+  .project-item:hover .projects-info {
+    opacity: 1;
+    z-index: 2;
+  }
+  .projects-info p {
+    color: white;
+    font-family: 'Lora', sans-serif;
+    font-size: 1.5em;
+    font-style: italic;
+    line-height: 1.6;
+    margin-top: 0.4em;
+  }
+.projects-info h6 {
+    font-family: 'playfair display', sans-serif;
+    font-size: 1.75em;
+    font-weight: 800;
+    line-height: 1.25em;
 }

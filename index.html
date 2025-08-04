@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="Mobile.css">
-        <script src="https://kit.fontawesome.com/c21cfe5a09.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c21cfe5a09.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <script src="/script/carousel.js" defer></script>
     <title>Abkon Portfolio</title>
 </head>
 <body>
@@ -31,6 +33,7 @@
                 <a href="https://web.facebook.com/login.php/?_rdc=1&_rdr#" target="_blank" rel="noopener"><i class="fa-brands fa-square-facebook"></i></a>
                 <a href="https://www.instagram.com/" target="_blank" rel="noopener"> <i class="fa-brands fa-square-instagram"></i></a>
                 <a href="https://www.linkedin.com/login" target="_blank" rel="noopener"> <i class="fa-brands fa-linkedin"></i></a> 
+
              </div>
 
           </aside>
@@ -95,29 +98,65 @@
                 </div>
               </div>
             </div>
-            <div class="tools-container">
-              <div class="tool-card">
-                <img src="https://img.icons8.com/?size=100&id=13677&format=png&color=000000" alt="photoshop" class="tool-icon">
-                <h3>PHOTOSHOP</h3>
-                <P>I multitask with photoshop from editing and enhancing image to creating mockup images,  also creating stunning visuals that captivate audiences.
-              </P>
-              </div>
-               <div class="tool-card">
+          </section>
+          <section  id="toolsCarousel" class="splide tools-container" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="tool-card">
+                    <img src="https://img.icons8.com/?size=100&id=13677&format=png&color=000000" alt="photoshop" class="tool-icon">
+                    <h3>PHOTOSHOP</h3>
+                    <P>
+                      I multitask with photoshop from editing and enhancing image to creating mockup images,  also creating stunning visuals that captivate audiences.
+                    </P>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                   <div class="tool-card">
                     <img src="https://img.icons8.com/?size=100&id=13631&format=png&color=000000" alt="Illustrator" class="tool-icon" />
                       <h3>ADOBE ILLUSTRATOR</h3>
                      <p>
-                          I harness Adobe Illustrator to craft bold, scalable vector graphics that
-                             embody brand essence.
+                        I harness Adobe Illustrator to craft bold, scalable vector graphics that embody brand essence.
                       </p>
                  </div>
+                </li>
+                <li class="splide__slide">
                   <div class="tool-card">
                       <img src="https://img.icons8.com/?size=100&id=zfHRZ6i1Wg0U&format=png&color=000000" alt="Figma" class="tool-icon" />
-                            <h3>FIGMA</h3>
-                       <p>
-                           I design and prototype digital products in Figma, creating seamless and
-                            engaging online experiences.
-                       </p>
+                      <h3>FIGMA</h3>
+                      <p>
+                        I design and prototype digital products in Figma, creating seamless and engaging online experiences.
+                      </p>
                    </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="tool-card">
+                    <img src="https://img.icons8.com/?size=100&id=13677&format=png&color=000000" alt="photoshop" class="tool-icon">
+                    <h3>PHOTOSHOP</h3>
+                    <P>
+                      I multitask with photoshop from editing and enhancing image to creating mockup images,  also creating stunning visuals that captivate audiences.
+                    </P>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                   <div class="tool-card">
+                    <img src="https://img.icons8.com/?size=100&id=13631&format=png&color=000000" alt="Illustrator" class="tool-icon" />
+                      <h3>ADOBE ILLUSTRATOR</h3>
+                     <p>
+                        I harness Adobe Illustrator to craft bold, scalable vector graphics that embody brand essence.
+                      </p>
+                 </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="tool-card">
+                      <img src="https://img.icons8.com/?size=100&id=zfHRZ6i1Wg0U&format=png&color=000000" alt="Figma" class="tool-icon" />
+                      <h3>FIGMA</h3>
+                      <p>
+                        I design and prototype digital products in Figma, creating seamless and engaging online experiences.
+                      </p>
+                   </div>
+                </li>
+              </ul>
             </div>
           </section>
           <!-- Third section -->
@@ -126,8 +165,108 @@
               <h1>Services Offered</h1>
               <p>Elevate your brand's visual identity with my expert design services. I specialize in creating captivating logos, social media designs, flyers, infographics, and user interfaces that embody your brand's essence, engage your audience, drive results, simplify complex information, and provide seamless experiences. Whether you're looking to refresh your brand's image or launch a new product, I'll work closely with you to craft visually stunning designs that resonate with your audience and set you apart from the competition</p> 
             </div>
+            <div class="services-offered">
+              <div class="grid-service">
+                <div class="service-item">
+                  <img src="https://img.icons8.com/?size=100&id=7pC1Q8DhdBb7&format=png&color=000000" alt="logodesign">
+                  <h5>Logo Designs</h5>
+                  <p class="service-description">
+                    Creatively designing a logo both as an illustration or wordmark.
+                  </p>
+               </div>
+                  <div class="service-item">
+                  <img src="https://img.icons8.com/?size=100&id=25165&format=png&color=000000" alt="Flyer Design">
+                  <h5>Flyer Designs</h5>
+                  <p class="service-description">
+                    Creating stunning designs for social media adverts.
+                  </p>
+              </div>
+               <div class="service-item">
+                  <img src="https://img.icons8.com/?size=100&id=101799&format=png&color=000000" alt="infographic">
+                  <h5>infographic</h5>
+                  <p class="service-description">
+                    Designing outstanding flyers with reputable colours both for printing or as e-flyer.
+                  </p>
+              </div>
+               <div class="service-item">
+                  <img src="https://img.icons8.com/?size=100&id=42384&format=png&color=000000" alt="User Interface">
+                  <h5>User Interface</h5>
+                  <p class="service-description">
+                    Illustration and detailing of information in a graphical representation.
+                  </p>
+              </div>
+            </div>
           </section>
+          <!-- Highlighted section -->
+           <section class="service-highlight">
+           </section>
+           <!-- Features and Brands section -->
+            <section class="projects-section">
+               <div class="projects-caption">
+                  <h2>Featured Brand Designs</h2>
+                  <p>A curated display of my ingenius brand designs, highlighting my expertise in creating compelling visual identities that capture the heart of each brand. From logos to integrated brand systems, I've selected these projects to demonstrate my ability to deliver creative, results-driven design solutions that elevate brands and drive business growth</p>
+               </div>
+               <div class="projects-grid">
+               <div class="project-item">
+                <img src="https://abkon.netlify.app/static/media/project1.f79172d78256f63e5450.jpg" alt="xe">
+                <div class="projects-info">
+                  <p> Brand Design</p>
+                  <h6>Xquiste Fabrics & Kouture</h6>
+                </div>
+               </div>
+               <div class="project-item">
+                <img src="https://abkon.netlify.app/static/media/project2.29b83449386bd5494c5a.jpg" alt="Rukeez stying">
+                <div class="projects-info">
+                  <p>Logo Design</p>
+                  <h6>Rukeez Styling</h6>
+                </div>
+               </div>
+               <div class="project-item">
+                <img src="https://abkon.netlify.app/static/media/project3.70dfce0f6e7e0e7c6ceb.jpg" alt="Whi TE Fashion House">
+                <div class="projects-info">
+                  <p>Logo Design</p>
+                  <h6>Whi TE Fashion House</h6>
+                </div>
+               </div>
+               <div class="project-item">
+                 <img src="https://abkon.netlify.app/static/media/project5.cd2d8e4b59f5581f8bd1.jpg" alt="Hair Affairs">
+                <div class="projects-info">
+                  <p>Brand Design</p>
+                  <h6>Hair Affairs</h6>
+                </div>
+               </div>
+               <div class="project-item">
+                 <img src="https://abkon.netlify.app/static/media/project4.55bf389835bf71d3165a.jpg" alt="Zippy Klassics">
+                <div class="projects-info">
+                  <p>Brand Design</p>
+                  <h6>Zippy Klassics</h6>
+                </div>
+               </div>
+               <div class="project-item">
+                 <img src="https://abkon.netlify.app/static/media/project6.8bad0618bac14775d7af.jpg" alt="Peel Aesthetic">
+                <div class="projects-info">
+                  <p>Brand Design</p>
+                  <h6>Peel Aesthetic</h6>
+                </div>
+               </div>
+               <div class="project-item">
+                 <img src="https://abkon.netlify.app/static/media/project7.a0412ba6410de82fb2d9.jpg" alt="Swift & Seamless Consults">
+                <div class="projects-info">
+                  <p>Brand Design</p>
+                  <h6>Swift & Seamless Consults</h6>
+                </div>
+               </div>
+               <div class="project-item">
+                 <img src="https://abkon.netlify.app/static/media/project8.7ba5032248f753b9c43b.jpg" alt="Fresh-Me Services">
+                <div class="projects-info">
+                  <p>Brand Design</p>
+                  <h6>Fresh-Me Services</h6>
+                </div>
+               </div>
+               </div>
+            </section>
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 </body>
 </html>
