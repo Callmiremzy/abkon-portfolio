@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -162,6 +162,9 @@ aside .nav-links a:hover {
 }
 .caption-social a:hover {
   transform: scale(1.1);
+}
+.ins {
+  color: #f2f2f2;
 }
 .scroll-indicator {
   align-items: center;
@@ -506,14 +509,160 @@ aside .nav-links a:hover {
   .projects-info p {
     color: white;
     font-family: 'Lora', sans-serif;
-    font-size: 1.5em;
     font-style: italic;
     line-height: 1.6;
     margin-top: 0.4em;
   }
 .projects-info h6 {
-    font-family: 'playfair display', sans-serif;
+    font-family: 'playfair Display', sans-serif;
     font-size: 1.75em;
     font-weight: 800;
-    line-height: 1.25em;
+    line-height: 1.25;
+}
+.testimonial-section {
+  width: 100%;
+  height: fit-content;
+  background-color: #ebebeb;
+  padding: 100px 50px;
+}
+.testimonial-caption {
+  margin-bottom: 20px;
+}
+.testimonial-caption h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.testimonial-caption p {
+  color: #4d4d4d;
+  font-family: 'Lora', sans-serif;
+  font-size: 1.2em;
+  line-height: 2;
+}
+.testimonial-slide {
+  max-width: 800px;
+  padding: 20px;
+  position: relative;
+  text-align: left;
+}
+.quotation {
+  color: #4d4d4d;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10em;
+  font-style: italic;
+  line-height: 1;
+}
+.testimonial-slide img {
+  object-fit: cover;
+  height: 120px;
+  object-position: top center;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 120px;
+  border-radius: 50%;
+}
+.testimonial-slide p {
+  color: #4d4d4d;
+  font-family: 'Lora', sans-serif;
+  font-size: 1.3em;
+  line-height: 2;
+  margin-bottom: 10px;
+}
+.testimonial-slide h5 {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3em;
+  font-weight: 700;
+  letter-spacing: .1em;
+  line-height: 1.35;
+  text-transform: capitalize;
+}
+.title {
+  color: #4b4b4b;
+  font-family: 'Lora', sans-serif;
+  font-size: .8em;
+  letter-spacing: 0;
+  line-height: 2;
+}
+.contact-section {
+  background-color: white;
+  height: 100vh;
+  padding: 50px;
+  width: 100%;
+}
+.contact-section h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.contact-section form {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px 20px;
+  justify-content: flex-start;
+  width: 100%;
+}
+.contact-section form input {
+  border: none;
+  border-bottom: 1px solid #e8e8e8;
+  color: black;
+  font-family: 'Lora', sans-serif;
+  font-size: 1.3em;
+  line-height: 2;
+  outline: none;
+  padding: 10px;
+  width: 48%;
+}
+.contact-section form textarea {
+  border: none;
+  border-bottom: 1px solid #e8e8e8;
+  color: black;
+  font-family: 'Lora', sans-serif;
+  font-size: 1.3em;
+  line-height: 2;
+  outline: none;
+  padding: 10px;
+  width: 98%;
+}
+.contact-section form button {
+  background-color: #292929;
+  border: 0;
+  border-radius: 30px;
+  box-shadow: 0 10px 20px #0003;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9375em;
+  font-weight: 700;
+  height: 3.8em;
+  letter-spacing: .28em;
+  margin-top: 50px;
+  padding: 1.2em 2.6em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease-in-out;
+}
+.contact-section form button:hover {
+  background-color: #4b4b4b;
+}
+footer {
+  background-color: #e8e8e8;
+  height: fit-content;
+  padding: 20px 50px;
+  width: 100%;
+}
+footer p {
+  color: #4d4d4d;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;`
 }
