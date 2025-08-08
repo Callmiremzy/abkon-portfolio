@@ -1,13 +1,141 @@
 @media (max-width: 600px) {
-  main aside {
-    width: 150px;
-    padding: 20px 0;
+  * {
+    /* outline: 1px solid red; */
   }
-  main aside h1 {
-    font-size: 1.5rem;
+   main {
+    flex-direction: column;
+    height: auto;
+  }
+  main aside {
+    display: none;
   }
   main .main-sections {
-    width: calc(100% - 150px);
-    margin-left: 150px;
+   margin-top: 60px;
+   margin-left: 0;
+   width: 100%;
   }
+  /* main, body {
+    padding: 70px;
+  } */
+.mobile-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1a1919;
+  color: #fff;
+  padding: 20px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.mobile-navbar h2 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.navbar-socials {
+align-items: center;
+color: var(--white);
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+font-size: 1.8rem;
+justify-content: space-between;
+max-width: 200px;
+min-width: 100px;
+}
+
+.navbar-socials a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.2s;
+}
+
+.navbar-socials a:hover {
+  color: #f39c12;
+}
+.hero-section {
+  text-align: center;
+  align-content: center;
+  height: 70vh;
+  min-height: 60vh;
+  padding: 40px 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+  .typed-text {
+    font-size: 1.9em;
+    text-align: center;
+  }
+  .hero-caption {
+    width: 100%;
+    margin-bottom: 80px;
+    font-size: 1em;
+    padding: 0 5px;
+  }
+  .grid-about {
+    display: grid;
+    padding: 50px 20px;
+    grid-template-columns: 1fr;
+}
+  .row-about,
+  .about-row-reverse,
+  .row-normal {
+    flex-direction: column !important;
+    align-items: stretch;
+  }
+  .about-image,
+  .reverse-image,
+  .row-image,
+  .about-text,
+  .reverse-text,
+  .row-text {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    flex: 1 1;
+  }
+  .about-image img,
+  .reverse-image img,
+  .row-image img {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    flex: auto;
+  }
+  .about-text h5,
+  .reverse-text h5,
+  .row-text h5 {
+    font-size: 2em;
+    line-height: 1.2;
+    margin-bottom: 10px;
+
+  }
+  .about-text p,
+  .reverse-text p,
+  .row-text p {
+    font-size: 1.2em;
+  }
+ .grid-service {
+  display: grid;
+  grid-template-columns: 1fr;
+ }
 }

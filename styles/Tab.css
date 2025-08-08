@@ -1,0 +1,63 @@
+@media screen and (min-width: 600px) and (max-width: 900px) {
+/* SIDEBAR    */
+main aside {
+    display: none;
+}
+main {
+    flex-direction: column;
+    height: auto;
+}
+ main .main-sections {
+   margin-top: 60px;
+   margin-left: 0;
+   width: 100%;
+  }
+/* NAVBAR */
+.mobile-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #292929;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9000;
+}
+.mobile-navbar h2 { 
+   color: #fff;
+   font-family: 'Lora', sans-serif;
+   font-size: 3rem;
+   font-weight: 700;
+   line-height: 1; 
+}
+.mobile-navbar .navbar-socials {
+    min-width: 100px;
+    max-width: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    color: #fff;
+}
+.navbar-socials a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.2s;
+}
+
+.navbar-socials a:hover {
+  color: #f39c12;
+}
+.hamburger {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 4px;
+}
+}

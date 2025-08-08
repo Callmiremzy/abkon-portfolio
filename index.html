@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="Mobile.css">
+    <link rel="stylesheet" href="/styles/Mobile.css">
+    <link rel="stylesheet" href="/styles/Tab.css">
     <script src="https://kit.fontawesome.com/c21cfe5a09.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <script src="/script/carousel.js" defer></script>
@@ -13,6 +14,18 @@
 </head>
 <body>
     <main>
+        <!-- mobile header -->
+            <header class="mobile-navbar">
+                <h2>Abkon</h2>
+               <div class="navbar-socials">
+                   <a href="https://web.facebook.com/login.php/?_rdc=1&_rdr#" target="_blank" rel="noopener"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener"><i class="fa-brands fa-square-instagram"></i></a>
+                   <a href="https://www.linkedin.com/login" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+               </div>
+                <button class="hamburger" aria-label="Open navigation">
+                 <i class="fa-solid fa-bars"></i>
+                </button>
+            </header>
         <!-- sidebar -->
         <aside>
             <img src="https://abkon.netlify.app/static/media/ABKON%20LOGO.4e817e235eabe1cb7271.png" alt="Logo">
@@ -31,7 +44,7 @@
                 </div>
               <div class="socials-icons">
                 <a href="https://web.facebook.com/login.php/?_rdc=1&_rdr#" target="_blank" rel="noopener"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://www.instagram.com/" target="_blank" rel="noopener"> <i class="fa-brands fa-square-instagram" class="ins"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener"> <i class="fa-brands fa-square-instagram"></i></a>
                 <a href="https://www.linkedin.com/login" target="_blank" rel="noopener"> <i class="fa-brands fa-linkedin"></i></a> 
 
              </div>
@@ -40,16 +53,6 @@
 
         <!-- Sections -->
         <div class="main-sections">
-            <!-- mobile header -->
-            <header>
-                <img src="" alt="">
-                <div>
-                    <i class="fa-solid fa-bars"></i>
-                    <i class="fa-solid fa-bars"></i>
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <i class="fa-solid fa-bars"></i>
-            </header>
             <!-- hero section -->
          <section class="hero-section">
            <img src="https://abkon.netlify.app/static/media/home-background.4d52b776bf6795b4b282.jpg" alt="Abkon image">
@@ -269,17 +272,75 @@
                   <h2>Client Testimonials</h2>
                   <p>My clients' success is my greatest achievement. We're   proud to have helped numerous brands elevate their visual identity and achieve their goals. But don't just take my word for it - hear from the clients who have experienced the impact of my design expertise firsthand.</p>
                 </div>
-                <div class="testimonial-slide">
-                  <span class="quotation">"</span>
-                   <img src="https://abkon.netlify.app/static/media/testimony7.44a7d2d4e1b1871e9e0d.jpg" alt="peace osahon">
-                    <p>Pearl Aesthetic Skincare's brand identity was elevated to the next level thanks to His expertise. His designs are not only visually stunning but also effectively communicate our brand's values. We couldn't be happier!</p>
-                    <h5>"Peace Osahon"
-                     <br>
-                      <span class="title">CEO Pearl Aesthetic
-                       Skincare
-                    </span>
-                   </h5>
-                 </div>
+                <section id="ToolsSplide" class="splide testimonial-section" aria-label="Splide Basic HTML Example">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <div class="testimonial-slide">
+                           <span class="quotation">"</span>
+                             <img src="https://abkon.netlify.app/static/media/testimony7.44a7d2d4e1b1871e9e0d.jpg" alt="peace osahon">
+                              <p>Pearl Aesthetic Skincare's brand identity was elevated to the next level thanks to His expertise. His designs are not only visually stunning but also effectively communicate our brand's values. We couldn't be happier!</p>
+                              <h5>"Peace Osahon"
+                             <br>
+                           <span class="title">CEO Pearl Aesthetic
+                          Skincare
+                        </span>
+                      </h5>
+                   </div>
+                      </li>
+                       <li class="splide__slide">
+                        <div class="testimonial-slide">
+                        <span class="quotation">"</span>
+                          <img src="https://abkon.netlify.app/static/media/testimony1.30f3aca5e5e7d0217889.jpg" alt="Benjamin Tom">
+                           <p>Abkon's creativity and ability to produce captivating brand identities is impressive. His skillful approach resulted in a seamless visual experience that enhances my online credibility and presence. I highly recommend his services!</p>
+                           <h5>
+                            "Benjamin Tom"
+                             <br>
+                            <span class="title">Web Developer
+                          </span>
+                        </h5>
+                        </div> 
+                      </li>
+                      <li class="splide__slide">
+                        <div class="testimonial-slide">
+                          <span class="quotation">"</span>
+                          <img src="https://abkon.netlify.app/static/media/testimony3.b595fcfa0078292af371.jpg" alt="Solomon Ikpembe">
+                          <p>I've had the pleasure of witnessing Abasiama's remarkable design talent firsthand. If you're looking for a brand design expert who will take your business to the next level, look no further</p>
+                          <h5>
+                            "Solomon Ikpembe"
+                            <br>
+                            <span class="title">IT Team member Access Bank</span>
+                          </h5>
+                        </div>
+                      </li>
+                       <li class="splide__slide">
+                        <div class="testimonial-slide">
+                           <span class="quotation">"</span>
+                             <img src="https://abkon.netlify.app/static/media/testimony7.44a7d2d4e1b1871e9e0d.jpg" alt="peace osahon">
+                              <p>Pearl Aesthetic Skincare's brand identity was elevated to the next level thanks to His expertise. His designs are not only visually stunning but also effectively communicate our brand's values. We couldn't be happier!</p>
+                              <h5>"Peace Osahon"
+                             <br>
+                           <span class="title">CEO Pearl Aesthetic
+                          Skincare
+                        </span>
+                      </h5>
+                   </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="testimonial-slide">
+                          <span class="quotation">"</span>
+                          <img src="https://abkon.netlify.app/static/media/testimony5.3b525de8e546f2d1b75c.jpg" alt="Ogbu Stephanie">
+                          <p>CK Barbershop's branding was a game-changer, all thanks to His incredible design skills. Our brand and branding materials have increased our customer engagement and loyalty. We're forever grateful!</p>
+                          <h5>
+                            "Ogbu Stephanie"
+                            <br>
+                            <span class="title">Hr, CK Babershop</span>
+                          </h5>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
                </div>
             </section>
             <section class="contact-section">
