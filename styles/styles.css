@@ -365,8 +365,8 @@ aside .nav-links a:hover {
   text-align: left;
 }
 .splide__pagination {
-  padding: 50px;
-  bottom: 2rem;
+  text-align: center;
+  bottom: 2rem !important;
 }
 .splide__pagination__page {
   background: #fff !important;
@@ -379,7 +379,7 @@ aside .nav-links a:hover {
   padding: 0;
   position: relative;
   transition: transform .2s linear;
-  width: 25px !important;
+  width: 20px !important;
 }
 .splide__pagination__page.is-active {
   background: #4d4d4d !important;
