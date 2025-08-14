@@ -60,4 +60,10 @@ main {
   cursor: pointer;
   padding: 4px;
 }
+.service-highlight {
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 30px;
+}
 }

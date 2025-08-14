@@ -2,18 +2,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="/styles/Mobile.css">
-    <link rel="stylesheet" href="/styles/Tab.css">
-    <script src="https://kit.fontawesome.com/c21cfe5a09.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
-    <script src="/script/carousel.js" defer></script>
-    <title>Abkon Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="/styles/Mobile.css">
+  <link rel="stylesheet" href="/styles/Tab.css">
+  <script src="https://kit.fontawesome.com/c21cfe5a09.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-default.css" />
+  <script src="/script/carousel.js" defer></script>
+  <script src="./script/odometer.js" defer></script>
+  <script src="./script/typed.js" defer></script>
+  <title>Abkon Portfolio</title>
 </head>
 <body>
-    <main>
+  <main>
         <!-- mobile header -->
             <header class="mobile-navbar">
                 <h2>Abkon</h2>
@@ -31,11 +34,11 @@
             <img src="https://abkon.netlify.app/static/media/ABKON%20LOGO.4e817e235eabe1cb7271.png" alt="Logo">
             <h2>Abkon</h2>
                 <ul class="nav-links">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Me</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#heroSection">Home</a></li>
+                    <li><a href="#aboutSection">About Me</a></li>
+                    <li><a href="#servicesSection">Services</a></li>
+                    <li><a href="#projectSection">Projects</a></li>
+                    <li><a href="#contactSection">Contact</a></li>
                 </ul>
                 <div class="contact-info">
                    <p>+234 901 217 4094</p>
@@ -54,10 +57,10 @@
         <!-- Sections -->
         <div class="main-sections">
             <!-- hero section -->
-         <section class="hero-section">
+         <section class="hero-section" id="heroSection">
            <img src="https://abkon.netlify.app/static/media/home-background.4d52b776bf6795b4b282.jpg" alt="Abkon image">
            <div class="hero-caption">
-            <div class="typed-text"><span>Hi, I'm Abasiama Bassey, a Brand Design Expert, and an Enterpreneur</span></div>
+            <div class="typed-text"><span id="typedText"></span></div>
             <div class="caption-social">
                 <a href="https://web.facebook.com/login.php/?_rdc=1&_rdr#" target="_blank" rel="noopener"><i class="fa-brands fa-square-facebook"></i></a>
                 <a href="https://www.instagram.com/" target="_blank" rel="noopener"> <i class="fa-brands fa-square-instagram"></i></a>
@@ -71,7 +74,7 @@
             </div>
          </section>
          <!-- Second section -->
-          <section class="about-section">
+          <section class="about-section" id="aboutSection">
             <div class="grid-about">
               <div class="row-about">
                 <div class="about-image">
@@ -164,7 +167,7 @@
             </div>
           </section>
           <!-- Third section -->
-          <section class="services-section">
+          <section class="services-section" id="servicesSection">
             <div class="services-caption">
               <h1>Services Offered</h1>
               <p>Elevate your brand's visual identity with my expert design services. I specialize in creating captivating logos, social media designs, flyers, infographics, and user interfaces that embody your brand's essence, engage your audience, drive results, simplify complex information, and provide seamless experiences. Whether you're looking to refresh your brand's image or launch a new product, I'll work closely with you to craft visually stunning designs that resonate with your audience and set you apart from the competition</p> 
@@ -204,9 +207,27 @@
            </section>
            <!-- Highlighted section -->
             <section class="service-highlight">
+              <!-- Years of Experience -->
+              <div class="count-container">
+                <h5>
+                  <div id="yearCount" class="odometer">6</div>+ Years of Experience
+                </h5>
+              </div>
+              <!-- Projects Completed -->
+              <div class="count-container">
+                <h5>
+                  <div id="projectsCount" class="odometer">45</div>+ Projects Completed
+                </h5>
+              </div>
+              <!-- Happy Clients -->
+              <div class="count-container">
+                <h5>
+                  <div id="clientCount" class="odometer">76</div>+ Happy Clients
+                </h5>
+              </div>
             </section>
             <!-- Features and Brands section -->
-            <section class="projects-section">
+            <section class="projects-section" id="projectSection">
                 <div class="projects-caption">
                   <h2>Featured Brand Designs</h2>
                   <p>A curated display of my ingenius brand designs, highlighting my expertise in creating compelling visual identities that capture the heart of each brand. From logos to integrated brand systems, I've selected these projects to demonstrate my ability to deliver creative, results-driven design solutions that elevate brands and drive business growth</p>
@@ -349,7 +370,7 @@
                </div>
             </section>
             <!-- CONTACT SECTION -->
-            <section class="contact-section">
+            <section class="contact-section" id="contactSection">
               <h2>Contact Us</h2>
               <form action="#" method="post">
                 <input type="text" id="name" name="name" placeholder="Name*" required>
@@ -365,5 +386,8 @@
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="http://github.hubspot.com/odometer/odometer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 </body>
 </html>
