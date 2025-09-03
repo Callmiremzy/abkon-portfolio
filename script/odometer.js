@@ -31,4 +31,4 @@ setInterval(function () {
   yearOdometer.update(yearsCount);
   projectOdometer.update(projectsCount);
   clientOdometer.update(clientCount);
-}, 2000);
+}, 3000); 

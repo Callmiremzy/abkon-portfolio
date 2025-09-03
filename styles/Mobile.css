@@ -1,7 +1,7 @@
 @media (max-width: 600px) {
-  * {
+  /* * {
     /* outline: 1px solid red; */
-  }
+  /* } */ */
    main {
     flex-direction: column;
     height: auto;
